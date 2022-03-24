@@ -1,0 +1,23 @@
+@import './variables';
+@import './balls';
+
+@mixin flexCenter($justifyContent) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include flexCenter(center); 
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: $backgroundColor;
+}
